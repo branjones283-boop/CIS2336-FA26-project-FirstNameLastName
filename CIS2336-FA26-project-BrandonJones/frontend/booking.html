@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>booking</title>
+</head>
+<body>
+    <h2>Booking</h2>
+    
+    <div class= "topnav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="map.html">Map</a>
+        <a class="active" href="booking.html">Rooms</a>
+        <a href="questions.html">Contacts</a>
+    </div>
+
+    <form class="booking-form" action="submit_form.php" method="post">
+
+        <label for="rooms">Select a Room:</label>
+            <select name="rooms" id="rooms">Rooms:</lablel>
+                <option value="room1">Room 1</option>
+                <option value="room2">Room 2</option>
+                <option value="room3">Room 3</option>
+                <br>
+        <label for="timeslot">Enter time slot:</label>
+        <input type="timeSlot" id="timeSlot" name="timeSlot">
+
+        <button>Book Room</button>
+    </form>
+</body>
+</html>
